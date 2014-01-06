@@ -27,6 +27,7 @@
 
 		<p>Created by <a href="http://daronspence.com">Daron Spence</a></p>
 
+		<a href="http://reddit.com"><img src="reddit.png" alt="Join Reddit" /></a>
 	</footer><!-- close footer -->
 
 <!-- scripts -->
@@ -36,7 +37,6 @@
 	// declare variables
 	var idx;
 	var quotes;
-	var button = $('button');
 	// declare functions
 	function randomline(){
 		$.get('quotes.txt', function(data){
@@ -52,8 +52,8 @@
 	};
 	// run initial function on page load
 	randomline();
-	$('#random').on('vclick', randomline);
-	$('#next').on('vclick', nextline);
+	$('#random').on('click', randomline);
+	$('#next').on('click', nextline);
 	</script><!-- end scripts -->
 
 </body><!-- close body -->

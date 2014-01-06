@@ -454,4 +454,8 @@ button {
 
 /* line 71, ../scss/style.scss */
 footer {
-  text-align: center; }
+  text-align: center;
+  margin-top: 3.236rem; }
+  /* line 74, ../scss/style.scss */
+  footer > a:hover {
+    border-bottom: none; }

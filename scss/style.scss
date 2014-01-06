@@ -70,4 +70,8 @@ button {
 }
 footer {
 	text-align: center;
+	margin-top: 1.618rem * 2;
+	> a:hover {
+		border-bottom: none;
+	}
 }
