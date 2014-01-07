@@ -1,5 +1,8 @@
 @import "normalize";
-* { box-sizing: border-box;}
+* { 
+	-moz-box-sizing: border-box;
+         box-sizing: border-box;
+   }
 body {
 	font-family: Helvetica, Arial, Sans-serif;
 	background: #2c3e50;
@@ -17,7 +20,7 @@ a {
 }
 main {
 	width: 60%;
-	min-width: 300px;
+/*	min-width: 300px;*/
 	margin: 0 auto;
 	border: 2px solid #e74c3c;
 	padding: 1.618rem;
@@ -27,17 +30,17 @@ h1 {
 	color: #ecf0f1;
 	margin: 0;
 	margin-bottom: 1.618rem;
-	text-shadow: 
+	/*text-shadow: 
 		1px 0 #ecf0f1, 
 		0 -1px #ecf0f1, 
 		-1px 0 #ecf0f1, 
 		0 1px #ecf0f1;
-	letter-spacing: .1em;
+*/	letter-spacing: .1em;
 	font-size: 2em;
 	text-align: center;
 	-webkit-text-fill-color: #2c3e50; /* Will override color (regardless of order) */
-   -webkit-text-stroke-width: .001em;
-   -webkit-text-stroke-color: #ecf0f1;
+    -webkit-text-stroke-width: .03em;
+    -webkit-text-stroke-color: #ecf0f1;
 }
 blockquote {
 	background: #e74c3c;
@@ -73,5 +76,10 @@ footer {
 	margin-top: 1.618rem * 2;
 	> a:hover {
 		border-bottom: none;
+	}
+}
+@media (max-width: 600px) {
+	main {
+		width: 90%;
 	}
 }

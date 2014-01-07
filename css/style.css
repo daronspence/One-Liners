@@ -378,9 +378,10 @@ table {
 
 /* line 2, ../scss/style.scss */
 * {
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 3, ../scss/style.scss */
+/* line 6, ../scss/style.scss */
 body {
   font-family: Helvetica, Arial, Sans-serif;
   background: #2c3e50;
@@ -389,38 +390,43 @@ body {
   line-height: 1.618;
   text-shadow: .1em .1em #333; }
 
-/* line 11, ../scss/style.scss */
+/* line 14, ../scss/style.scss */
 a {
   color: #e74c3c;
   text-decoration: none; }
-  /* line 14, ../scss/style.scss */
+  /* line 17, ../scss/style.scss */
   a:hover {
     border-bottom: 1px solid #e74c3c; }
 
-/* line 18, ../scss/style.scss */
+/* line 21, ../scss/style.scss */
 main {
   width: 60%;
-  min-width: 300px;
+  /*	min-width: 300px;*/
   margin: 0 auto;
   border: 2px solid #e74c3c;
   padding: 1.618rem;
   margin-top: 1.618rem; }
 
-/* line 26, ../scss/style.scss */
+/* line 29, ../scss/style.scss */
 h1 {
   color: #ecf0f1;
   margin: 0;
   margin-bottom: 1.618rem;
-  text-shadow: 1px 0 #ecf0f1,  0 -1px #ecf0f1,  -1px 0 #ecf0f1,  0 1px #ecf0f1;
+  	/*text-shadow: 
+  		1px 0 #ecf0f1, 
+  		0 -1px #ecf0f1, 
+  		-1px 0 #ecf0f1, 
+  		0 1px #ecf0f1;
+  */
   letter-spacing: .1em;
   font-size: 2em;
   text-align: center;
   -webkit-text-fill-color: #2c3e50;
   /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: .001em;
+  -webkit-text-stroke-width: .03em;
   -webkit-text-stroke-color: #ecf0f1; }
 
-/* line 42, ../scss/style.scss */
+/* line 45, ../scss/style.scss */
 blockquote {
   background: #e74c3c;
   padding: .5em 1em;
@@ -428,11 +434,11 @@ blockquote {
   margin: 0 1rem 1.618rem;
   -webkit-margin-after: 2.618rem; }
 
-/* line 49, ../scss/style.scss */
+/* line 52, ../scss/style.scss */
 section {
   text-align: center; }
 
-/* line 52, ../scss/style.scss */
+/* line 55, ../scss/style.scss */
 button {
   background: #ecf0f1;
   border-radius: 4px;
@@ -442,20 +448,25 @@ button {
   outline: none;
   -webkit-appearance: none;
   color: #2c3e50; }
-  /* line 61, ../scss/style.scss */
+  /* line 64, ../scss/style.scss */
   button:hover {
     background: rgba(0, 0, 0, 0);
     box-shadow: inset 0 0 0 1px #ecf0f1;
     color: #ecf0f1; }
-  /* line 66, ../scss/style.scss */
+  /* line 69, ../scss/style.scss */
   button:active {
     background: #ecf0f1;
     color: #2c3e50; }
 
-/* line 71, ../scss/style.scss */
+/* line 74, ../scss/style.scss */
 footer {
   text-align: center;
   margin-top: 3.236rem; }
-  /* line 74, ../scss/style.scss */
+  /* line 77, ../scss/style.scss */
   footer > a:hover {
     border-bottom: none; }
+
+@media (max-width: 600px) {
+  /* line 82, ../scss/style.scss */
+  main {
+    width: 90%; } }
