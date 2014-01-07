@@ -40,7 +40,7 @@
 	var quotes;
 	// declare functions
 	function randomline(){
-		$.get('quotes.txt', function(data){
+		$.get('jokes.txt', function(data){
 			quotes = data.split("\n\n");
 			idx = Math.floor(quotes.length * Math.random());
 	        $('#one-liners').html(quotes[idx]);
